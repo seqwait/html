@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div水平垂直居中</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        * 水平垂直居中*
+        */
+        .div1 {
+            width: 500px;
+            height: 400px;
+            position: relative;
+            background: #a2ffab;
+        }
+
+        .div2 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <div class="div2"></div>
+</div>
+</body>
+</html>

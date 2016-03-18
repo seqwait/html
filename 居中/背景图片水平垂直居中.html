@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景图片水平垂直居中</title>
+    <style>
+        div {
+            width: 500px;
+            height: 400px;
+            background: red;
+            margin-top: 20px;
+            border: 1px solid red;
+            background: url("imgs/yuan.png") center center no-repeat;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        span {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        p {
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span>
+       <img src="imgs/ren.jpg">
+         <p>一毛不拔</p>
+    </span>
+
+</div>
+</body>
+</html>

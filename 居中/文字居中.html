@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div水平垂直居中</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        * 水平垂直居中*
+        */
+        .big {
+            width: 500px;
+            height: 400px;
+            position: relative;
+             background: #a2ffab;
+        }
+
+        .small {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /*
+        * 水平居中
+        */
+        .big1 {
+            width: 500px;
+            height: 400px;
+            background:  #a2ffab;
+            margin-top: 20px;
+        }
+
+        .small1 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            margin: auto;
+            text-align: center;
+        }
+
+        /*
+        * 文字居中
+        */
+        .big2 {
+            width: 500px;
+            height: 400px;
+            background:  #a2ffab;
+            margin-top: 20px;
+        }
+
+        .small2 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            margin: auto;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /*
+        * 图片水平居中
+        */
+        .big3 {
+            width: 500px;
+            height: 400px;
+            background:  #a2ffab;
+            margin-top: 20px;
+        }
+
+        .big3 img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /*
+        * 图片水平垂直居中
+        */
+        .miao {
+            width: 570px;
+            height: 400px;
+            display: table;
+            text-align: center;
+            border: solid 1px red;
+        }
+
+        .miao span {
+            display: table-cell;
+            vertical-align: middle;
+            border: solid 1px blue;
+        }
+
+        .miao span img {
+            border: dashed 1px green;
+            width: 40%;
+        }
+
+        /*
+        * 背景图片图片水平垂直居中
+        */
+        .big4 {
+            width: 500px;
+            height: 400px;
+            background: red;
+            margin-top: 20px;
+            border: 1px solid red;
+            background: url("http://lianai-image-sys.imlianai.com/web/img/show/14076237.jpg") center center no-repeat;
+        }
+    </style>
+</head>
+<body>
+<!-- 水平垂直居中 -->
+<div class="big">
+    <div class="small"></div>
+</div>
+
+
+<!-- 水平居中 -->
+<div class="big1">
+    <div class="small1"></div>
+</div>
+
+<!-- 文字居中 -->
+<div class="big2">
+    <div class="small2">
+        哈啊哈方法
+    </div>
+</div>
+
+<!-- 图片居中居中3 -->
+
+<div class="miao">
+			<span><img
+                    src="http://lianai-image-sys.imlianai.com/web/img/show/14076237.jpg"/>
+			</span>
+			<span><img
+                    src="http://lianai-image-sys.imlianai.com/web/img/show/14076237.jpg"/>
+			</span>
+</div>
+
+<!-- 图片居中居中4 -->
+<div class="big4">
+</div>
+
+
+</body>
+</html>
