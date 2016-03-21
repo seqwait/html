@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box布局</title>
+
+    <style>
+        * {
+            /*box布局要去掉*/
+            /*margin: 0 auto;*/
+            padding: 0;
+            margin: 0;
+        }
+        .div {
+            height: 200px;
+            width: 100%;
+            display: -moz-box;
+            display: -webkit-box;
+            display: box;
+            background: #0aff19;
+        }
+        .div1 {
+            background: orange;
+            -moz-box-flex: 3;
+            -webkit-box-flex: 3;
+            box-flex: 3;
+        }
+        .div2 {
+            background: red;
+            -moz-box-flex: 2;
+            -webkit-box-flex: 2;
+            box-flex: 2;
+        }
+        .div3 {
+            -moz-box-flex: 1;
+            -webkit-box-flex: 1;
+            box-flex: 1;
+            background: green;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="div">
+    <div class="div1">01</div>
+    <div class="div2">02</div>
+    <div class="div3">03</div>
+</div>
+
+</body>
+</html>

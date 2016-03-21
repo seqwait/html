@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout-固定表格布局.html</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .table1 {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 400px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .table1 tr td {
+            border: 1px solid cornflowerblue;
+            white-space: nowrap;
+            overflow: hidden;
+            word-break: break-all;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+
+
+<table class="table1" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td>设置表格布局算法：</td>
+        <td>这到底是什么鬼?</td>
+        <td>tableLayout 属性用来显示表格单元格、行、列的算法规则。</td>
+    </tr>
+    <tr>
+        <td>automatic 默认。列宽度由单元格内容设定。</td>
+        <td>fixed 列宽由表格宽度和列宽度设定。</td>
+        <td>inherit 规定应该从父元素继承 table-layout 属性的值。</td>
+
+    </tr>
+    <tr>
+        <td>该属性指定了完成表布局时所用的布局算法</td>
+        <td>固定布局算法比较快，但是不太灵活，</td>
+        <td>而自动算法比较慢</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>after和before</title>
+    <style>
+        /*简而言之，伪元素将会在内容元素的前后插入额外的元素*/
+        div {
+            width: 300px;
+            height: 200px;
+            background: #ffe242;
+            margin: 0 auto;
+        }
+
+        div:after {
+            content: 'after字符串';
+        }
+
+        div:before {
+            content: 'before字符串';
+        }
+    </style>
+</head>
+<body>
+<div>
+    什么鬼?
+</div>
+
+</body>
+</html>

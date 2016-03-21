@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>图片垂直水平居中2</title>
+  <style>
+    p {
+        height: 400px;
+        background: #53ff77;
+        text-align: center;
+        /*vertical-align: middle;*/
+    }
+    i {
+        height: 100%;
+        /*将对象呈现为inline对象，但是对象的内容作为block对象呈现。之后的内联对象会被排列在同一行内*/
+        display: inline-block;
+        vertical-align: middle;
+    }
+    img {
+        vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <p>
+     <img src="imgs/ren.jpg"/>
+      <i></i>
+  </p>
+</body>
+</html>
