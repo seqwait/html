@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>输入框</title>
+    <style>
+        .search {
+            width: 228px;
+            height: 39px;
+            background: url("resource/input.png");
+            margin: 0 auto;
+            background-position: 0px -160px;
+        }
+        .search-focus {
+            width: 228px;
+            height: 39px;
+            background: url("resource/input.png");
+            margin: 0 auto;
+            background-position: -233px -160px;
+            color: #C3C3C3;
+        }
+        .search-input {
+            border: 0;
+            margin: 10px 0 10px 15px;
+            height: 20px;
+            color: #C3C3C3;
+            outline: none;
+        }
+        .search-btn {
+            vertical-align: middle;
+            cursor: pointer;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="search">
+  <input type="text" name="search" class="search-input"
+         onfocus="if(this.value=='找到好音乐'){this.value='';};$(this.parentNode).addClass('search-focus')"
+         value="找到好音乐" onblur="$(this.parentNode).removeClass('search-focus').addClass('search');$(this).val('找到好音乐');">
+    <input type="button" class="search-btn" onclick="alert('ok')">
+</div>
+
+</body>
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</html>

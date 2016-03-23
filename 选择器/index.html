@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>选择器</title>
+</head>
+
+<style>
+    /*元素选择器*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #iddiv {
+        background: #53ff77;
+    }
+    .classdiv {
+        width: 200px;
+    }
+    .div {
+        height: 250px;
+    }
+    /*属性选择符*/
+    .div2 p { /*命中子元素及子孙元素*/
+        background: #1d1eff;
+    }
+    .div2 > p { /*只能命中子元素*/
+        background: #ffe242;
+    }
+    .p3 + p { /*只能命中相邻元素*/
+        background: #ed88ff;
+    }
+    .p4 ~ p { /*p4元素后的所有兄弟元素*/
+        background: #ff316c;
+    }
+    p[val] {
+        background: #ff316c;;
+    }
+    p[val='1'] {
+        background: #28fff7;
+    }
+    p[val='1']:before {
+        content: "大大";
+    }
+
+
+
+
+
+</style>
+
+<body>
+
+
+  <div id="iddiv"
+       class="classdiv">
+
+      <ul>
+          <li>
+             我是第一行
+          </li>
+
+          <li>
+            我是第二行
+
+          </li>
+
+          <li>
+           我是第三行
+          </li>
+      </ul>
+
+  </div>
+
+ <hr/>
+
+  <div class="div2">
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <p>p4</p>
+    <p>p5</p>
+</div>
+
+  <hr/>
+
+  <div class="div3">
+    <p class="p3">p1</p>
+    <p>p3</p>
+    <i>what the fuck!</i>
+    <p class="p4">p4</p>
+    <p>p5</p>
+    <p>p6</p>
+    <p>p6</p>
+</div>
+
+  <hr/>
+
+  <div class="div4">
+    <p val="1">p5</p>
+    <p val="2">p6</p>
+    <p>p6</p>
+</div>
+
+</body>
+</html>
